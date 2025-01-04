@@ -2,10 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root{
-    --Background: #0D1B2A;
-    --Background-2: #102438;
-    --Link-color: #1E6091;
-    --Hover-color: #76C7C0;
+    --Background: #000000;
+    --Link-color: #0D1B2A;
+    --Hover-color: #1E6091;
     --Border-color: #1F7868;
     --Text-color: #E0E0E0;
 }
@@ -35,8 +34,8 @@ a:hover{
 
 body{
     font-family: "Inter", sans-serif;
-    height: 1200vh;
-    background: linear-gradient(360deg, var(--Background), var(--Hover-color) 250%);
+    height: 900vh;
+    background-color: var(--Background);
 }
 
 nav{
@@ -76,10 +75,14 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(assets/Background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 header h1{
-    font-size: 75px;
+    font-size: 80px;
     font-weight: bold;
     color: var(--Text-color);
     user-select: none;
@@ -87,8 +90,9 @@ header h1{
 }
 
 header p{
-    font-size: 22px;
+    font-size: 25px;
     color: var(--Text-color);
     user-select: none;
     pointer-events: none;
+    
 }
